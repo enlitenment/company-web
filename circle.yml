@@ -1,0 +1,14 @@
+machine:
+  node:
+    version: 5.5.0
+  post:
+    - npm install -g npm@3.3.x
+deployment:
+  staging:
+    branch: develop
+    heroku:
+      appname: company-web-staging
+  production:
+    branch: master
+    heroku:
+      appname: company-web-production
